@@ -16,6 +16,7 @@ describe("reverseString()", () => {
   it("should throw an error when passed a non-string value", () => {
     expect(() => reverseString(1)).to.throw(TypeError);
     expect(() => reverseString([1, 2, 3])).to.throw(TypeError);
+    expect(() => reverseString({a: "b"})).to.throw(TypeError);
   });
 });
 //!!END
