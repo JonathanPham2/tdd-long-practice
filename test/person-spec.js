@@ -96,7 +96,7 @@ describe("Person", () => {
     });
 
     context("when unsuccessful", () => {
-      it("should return true if the update was successful", () => {
+      it("should return true if the update was unsuccessful", () => {
         expect(person.tryUpdate(1)).to.be.false;
       });
     });
